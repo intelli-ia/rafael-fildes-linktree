@@ -13,6 +13,9 @@
   --text-muted: #6B675F;
   --text-subtle: #9C978C;
   --white: #FFFFFF;
+  --block-bg: #173A39;
+  --block-accent: #61BFBF;
+  --block-secondary: #FFFFFF;
 }
 
 @theme inline {

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Montserrat } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
+const cairoBold = Cairo({
   subsets: ["latin"],
   display: "swap",
-  weight: "400",
+  weight: "700",
   variable: "--font-heading",
 });
 
-const montserrat = Montserrat({
+const cairoRegular = Cairo({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
@@ -17,11 +17,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Patricia Souza",
-  description: "Links úteis de Patricia Souza.",
+  title: "Rafael Fildes",
+  description: "Links úteis de Rafael Fildes.",
   icons: {
-    icon: [{ url: "/profile.jpg", type: "image/jpeg" }],
-    apple: [{ url: "/profile.jpg", type: "image/jpeg" }],
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
   },
 };
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${playfairDisplay.variable} ${montserrat.variable}`}
+      className={`${cairoBold.variable} ${cairoRegular.variable}`}
     >
       <body className="font-body antialiased">{children}</body>
     </html>
